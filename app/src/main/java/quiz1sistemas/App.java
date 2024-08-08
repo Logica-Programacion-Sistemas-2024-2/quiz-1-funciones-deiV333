@@ -1,3 +1,4 @@
+
 package quiz1sistemas;
 
 import java.util.Scanner;
@@ -116,9 +117,11 @@ public class App {
                 }
 
                 return valDescuentoCombo;
-            }else{
+            }else if(tipoSillaComprada.equals("G")){
                 valDescuentoCombo = 0;
                 return valDescuentoCombo;
+            }else{
+                return -1;
             } 
         
         }catch (Exception e) {
@@ -156,3 +159,4 @@ public class App {
 
     }
 }
+
